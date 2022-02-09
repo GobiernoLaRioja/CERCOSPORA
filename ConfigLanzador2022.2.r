@@ -20,9 +20,9 @@ salidaAzucareraAB = TRUE #TRUE #FALSE #  # Dejar esto en false si no se quiere q
 
 #Inicialización archivo Configuración (Desde R)
 # Crear archivo configuración # Crear tabla
-# configuracion2022 <- data.frame(estacion = c("SE03"), origenDato = "SIARNAcional", fechaInicio = as.POSIXct("2021-10-01 UTC"), fechaFin = Sys.time(), procesar = TRUE, zona = c('SEVILLA'), nombreEstacion = "Lebrija I", stringsAsFactors = F)
-# configuracion2022 <- rbind(configuracion2022,data.frame(estacion = c("SE21"), origenDato = "SIARNAcional", fechaInicio = as.POSIXct("2021-10-01 UTC"), fechaFin = Sys.time(), procesar = FALSE, zona = c('SEVILLA'), nombreEstacion = "Los Palacios (IFAPA)"))
-# configuracion2022 <- rbind(configuracion2022, list(estacion = c("2944"), origenDato = "CESENS", fechaInicio = NA, fechaFin = NA, procesar = FALSE, zona = c('SEVILLA'), nombreEstacion = "Cercospora Payuelos 2022"))
+# configuracion2022 <- data.frame(estacion = codigoEstacionMAPAMA, origenDato = "SIARNAcional", fechaInicio = as.POSIXct("2021-10-01 UTC"), fechaFin = Sys.time(), procesar = TRUE, zona = c('SEVILLA'), nombreEstacion = "Cercospora Estacion Ministerio 2022", stringsAsFactors = F)
+# configuracion2022 <- rbind(configuracion2022,data.frame(estacion = codigoEstacionMAPAMA, origenDato = "SIARNAcional", fechaInicio = as.POSIXct("2021-10-01 UTC"), fechaFin = Sys.time(), procesar = FALSE, zona = c('SEVILLA'), nombreEstacion = "Cercospora Estacion Ministerio 2022"))
+# configuracion2022 <- rbind(configuracion2022, list(estacion = codigoEstacionCESENS, origenDato = "CESENS", fechaInicio = NA, fechaFin = NA, procesar = FALSE, zona = c('SEVILLA'), nombreEstacion = "Cercospora Sevillla 2022"))
 # write.csv(configuracion2022, "ArchivoConfiguracion2022.csv", row.names = F)
 
 # Cargar archivo de configuracion
